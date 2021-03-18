@@ -49,7 +49,7 @@
     }
   },
   "eslintIgnore": [
-    "./src/__tests__"
+    "./src/__tests__, ./src/reportWebVitals.ts"
   ],
   "prettier": {
     "printWidth": 85,

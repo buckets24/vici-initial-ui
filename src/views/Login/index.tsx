@@ -16,7 +16,7 @@ function LoginView(): JSX.Element {
       className={`${s.container} bg-white border border-gray-500 rounded-lg relative overflow-hidden z-20`}
     >
       <div className="flex flex-col items-center pt-6 pb-6">
-        <div className="font-bold text-4xl">Sign in</div>
+        <div className="font-bold text-4xl pb-1">Sign in</div>
         <div className="font-light text-base text-gray-light">
           Welcome, we missed you!
         </div>
@@ -31,8 +31,8 @@ function LoginView(): JSX.Element {
               value={userDetails?.email}
               placeholder="Enter your email"
               className="border-b-2 border-gray-100 outline-none w-full pb-2.5 text-black-default placeholder-gray-regular placeholder-opacity-50"
-              onChange={(e: any) =>
-                setDetails({ ...userDetails, email: e?.target?.value })
+              onChange={(ev: React.ChangeEvent<HTMLInputElement>): void =>
+                setDetails({ ...userDetails, email: ev?.target?.value })
               }
             />
           </div>
@@ -46,8 +46,8 @@ function LoginView(): JSX.Element {
               value={userDetails?.password}
               placeholder="Enter your password"
               className="border-b-2 border-gray-100 outline-none w-full pb-2.5 text-black-default placeholder-gray-regular placeholder-opacity-50"
-              onChange={(e: any) =>
-                setDetails({ ...userDetails, password: e?.target?.value })
+              onChange={(ev: React.ChangeEvent<HTMLInputElement>): void =>
+                setDetails({ ...userDetails, password: ev?.target?.value })
               }
             />
           </div>
