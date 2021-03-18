@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.1.1",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
@@ -17,8 +18,8 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "craco start",
+    "build": "craco build",
     "eject": "react-scripts eject",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx . --quiet --fix",
     "check-types": "tsc",
@@ -85,6 +86,8 @@
     ]
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.4",
+    "autoprefixer": "^9.8.6",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
@@ -95,7 +98,9 @@
     "is-ci-cli": "^2.2.0",
     "lint-staged": "^10.5.4",
     "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.35",
     "prettier": "^2.2.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4",
     "typescript": "^4.2.3"
   }
 }
